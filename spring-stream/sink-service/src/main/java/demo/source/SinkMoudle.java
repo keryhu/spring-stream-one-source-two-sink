@@ -1,0 +1,16 @@
+package demo.source;
+
+import org.springframework.cloud.stream.annotation.EnableBinding;
+import org.springframework.cloud.stream.messaging.Sink;
+import org.springframework.integration.annotation.ServiceActivator;
+
+@EnableBinding(Sink.class)
+public class SinkMoudle {
+	
+	@ServiceActivator(inputChannel=Sink.INPUT)
+	public void loggerSink(Object payload) {
+		System.out.println("Received: " + payload);
+	}
+
+
+}
