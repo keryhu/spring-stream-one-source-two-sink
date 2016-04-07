@@ -6,7 +6,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>spring-stream</name>
-
+	<modules>
+		<module>source-service</module>
+		<module>sink-service</module>
+		<module>sink-service2</module>
+	</modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -98,8 +102,5 @@
 	</repositories>
 
 
-	<modules>
-		<module>source-service</module>
-		<module>sink-service</module>
-	</modules>
+
 </project>

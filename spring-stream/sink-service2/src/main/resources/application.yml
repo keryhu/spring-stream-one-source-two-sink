@@ -1,14 +1,12 @@
 server:
-  port: 8080
+  port: 8084
 
 spring:
   cloud:
     stream:
       bindings:
-        output:
+        input: 
           destination: testtock
-          contentType: text/plain
-          
        
           
    

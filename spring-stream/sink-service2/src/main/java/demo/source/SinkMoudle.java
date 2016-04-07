@@ -20,7 +20,7 @@ public class SinkMoudle {
 	 */
 	@StreamListener(Sink.INPUT)
 	public void loggerSink(Object payload) {
-		System.out.println("Received from sink1: " + payload);
+		System.out.println("Received from sink2: " + payload);
 	}
 
 

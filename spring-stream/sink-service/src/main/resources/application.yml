@@ -5,7 +5,8 @@ spring:
   cloud:
     stream:
       bindings:
-        input: testtock
+        input: 
+          destination: testtock
        
           
    
